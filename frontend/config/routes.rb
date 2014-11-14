@@ -28,7 +28,7 @@ Spree::Core::Engine.add_routes do
   put '/cart/empty', :to => 'orders#empty', :as => :empty_cart
 
   # route globbing for pretty nested taxon and product paths
-  get '/t/*id', :to => 'taxons#show', :as => :nested_taxons
+  get '/*id/all-products', :to => 'taxons#show', :as => :nested_taxons
 
   get '/unauthorized', :to => 'home#unauthorized', :as => :unauthorized
   get '/content/cvv', :to => 'content#cvv', :as => :cvv
