@@ -50,4 +50,3 @@ $(document).ready ->
               product.image = product.master.images[0].small_url
             el.append(productTemplate({ product: product }))
           $('#sorting_explanation').show()
-
